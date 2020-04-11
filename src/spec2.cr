@@ -1,5 +1,7 @@
 require "colorize"
 
+require "pretty"
+
 require "./factory"
 
 require "./matcher"
@@ -34,7 +36,7 @@ module Spec2
   end
 
   def record_started_at
-    @@started_at = Time.now
+    @@started_at = Pretty.now
   end
 
   def started_at

@@ -4,3 +4,7 @@ version: 0.11.0
 license: MIT
 authors:
 - Oleksii Fedorov <waterlink000@gmail.com>
+
+dependencies:
+  pretty:
+    github: maiha/pretty.cr

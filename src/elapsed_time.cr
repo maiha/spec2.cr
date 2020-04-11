@@ -15,7 +15,7 @@ module Spec2
 
     private getter time_now, started_at
     def initialize
-      initialize(Spec2.started_at, Time.now)
+      initialize(Spec2.started_at, Pretty.now)
     end
 
     def initialize(@started_at, @time_now)
