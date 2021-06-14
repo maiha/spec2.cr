@@ -8,7 +8,8 @@ module Spec2
         new
       end
 
-      getter! output, nesting
+      getter! output : Output
+      getter! nesting
       def initialize
         @count = 0
         @pending = 0
@@ -16,7 +17,7 @@ module Spec2
         @nesting = 0
       end
 
-      def configure_output(@output : Output)
+      def configure_output(@output)
       end
 
       def context_started(context)

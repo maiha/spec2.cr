@@ -10,7 +10,7 @@ module Spec2
       def initialize(&@block : T -> {Bool, String, String})
       end
 
-      def match(actual : T)
+      def match(actual)
         ok, @failure_message, @failure_message_when_negated = @block.call(actual)
         ok
       end

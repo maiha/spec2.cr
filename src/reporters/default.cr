@@ -8,14 +8,14 @@ module Spec2
         new
       end
 
-      getter! output
+      getter! output : Output
       def initialize
         @count = 0
         @pending = 0
         @errors = [] of ExpectationNotMet
       end
 
-      def configure_output(@output : Output)
+      def configure_output(@output)
       end
 
       def context_started(context)
